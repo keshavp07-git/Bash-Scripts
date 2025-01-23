@@ -20,3 +20,8 @@ echo "ADDING ID"
 id $usr
 echo "Done"
 done
+echo "--------------------------"
+for (( i=0; i<10; i++ ))
+do
+echo "Looping for $i"
+done
