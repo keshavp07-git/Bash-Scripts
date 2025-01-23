@@ -1,0 +1,15 @@
+use crontab -e 
+then type time and hour and path for monitoring and get the log file
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+# Meaning of * or MM minute , HH hour , DOM Date of month MM ,
+# mm Month , DOW Day of Week ,
+# This Script will monitor our service if it close we want to run automatically # we can use pattern of timming run automatically
+# MM HH DOM mm DOW command (* every time and month)
+# 30 20 *   *  1-5 Command
+# with redirection symbol every thing save into log file
+-------------------------------------------------------------------------------------------------------------------------------------
+* * * * * /opt/scripts/mont.sh &>> /var/log/monit_httpd.log ----------- This the way to declare
+
+
